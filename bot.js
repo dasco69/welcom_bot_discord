@@ -8,11 +8,12 @@ const fs = require('fs');
 const config = require('./config.json');
 const token = config.token
 const prefix = config.prefix
+const channelDiscu = config.idServeTextDiscu
 
 //Module Welcome
 const Welcome = require('./modules/welcome.js')
 const ModWelcome = new Welcome
-const voicState = ModWelcome.voiceState(client)
+const voicState = ModWelcome.voiceState(client, channelDiscu)
 
 //Module Music playing
 const Music = require('./modules/music.js')

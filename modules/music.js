@@ -193,19 +193,6 @@ class Music {
         };
         try {
             message.channel.send({ embed: exampleEmbed})
-            /*
-            message.channel.send(`
-            \n
-            Commande: \n
-            !play : pour écouter une musique, ajouter une URL Youtube. \n
-             Si tu veux ajouter d'autre musique: !play + adresse youtube \n
-            !pause : pour mettre en pause la musique \n
-            !replay : pour remettre la musique en route\n
-            !stop : arrête la diffusion de la musique \n
-            !skip : passe à la prochaine musique \n
-            !quit : le robot quitte le channel vocal\n
-            `)
-            */
         } catch (error) {
             console.error(error)
         }
